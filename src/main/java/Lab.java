@@ -1,4 +1,8 @@
+
+
 public class Lab {
+    private static final Exception FileNotFoundException = null;
+
     /**
      * An exception is an unexpected event that occurs during our program.
      * Most likely, you have already encountered an Exception (ArrayIndexOutOfBounds, etc).
@@ -19,8 +23,14 @@ public class Lab {
      * a method thrown to it. A try/catch block would handle the exception within the method.
      *
      * Check out this guide on throwing exceptions: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/#
+     * @param FileNotFoundException 
+     * @throws Exception
      */
-    public void mustThrow() {
-
-    }
+    
+    public void mustThrow() throws Exception{
+       // Exception FileNotFoundException;
+        throw FileNotFoundException;
+                     
+        }
 }
+    
